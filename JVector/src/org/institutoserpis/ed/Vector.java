@@ -20,7 +20,7 @@ public class Vector {
 		System.out.println("indexOf=" +indexOf(v, 32));
 		
 	}
-	public static int indexOf(int[] v, int item) {
+	public static int indexOf(int[] v, int data) {
 		//implementación basada en libro de Wirth Algoritmos y Estructuras de Datos
 //		int index = 0;
 //		while (index < v.length && v[index] != item)
@@ -31,17 +31,33 @@ public class Vector {
 
 		
 		//otra implementación
-		for (int index = 0; index < v.length; index++)
-			if (v[index] == item)
+//		for (int index = 0; index < v.length; index++)
+//			if (v[index] == item)
+//				return index;
+//		return -1;
+		
+		
+		//otra implentacion con for each
+		int index = 0;
+		for (int item : v){
+			if (item == data)
 				return index;
+			index++;
+		}
 		return -1;
 	}
-	
 	public static int min(int[] v) {
 		int min = v[0];
-		for (int index = 1; index < v.length; index++)
-			if (v[index] < min)
-				min = v[index];
+//		for (int index = 1; index < v.length; index++)
+//			if (v[index] < min)
+//				min = v[index];
+//		return min;
+		
+		//Alternativa con for each
+		for (int item : v)
+			if (item < min)
+				min=item;
 		return min;
+		
 	}
 }
