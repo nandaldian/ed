@@ -12,6 +12,7 @@ public class Adivina {
 		int numero;
 		int numeroAleatorio = random.nextInt(1000)+1;
 		int cont=0;
+		
 		System.out.println("Adivina el num entre 1 y 1000...Adivina");
 		System.out.println("numeroAleatorio=" + numeroAleatorio);
 		
