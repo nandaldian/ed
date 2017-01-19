@@ -27,3 +27,4 @@ public void selectionSort(){
 	Vector.selectionSOrt(v);
 	assertArrayEquals(new int[]{7, 9, 12, 15, 32}, v);
 }}
+.
