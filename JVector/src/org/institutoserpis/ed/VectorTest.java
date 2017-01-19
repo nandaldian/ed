@@ -7,22 +7,23 @@ import org.junit.Test;
 
 public class VectorTest {
 
-	@Test
-	public void indexOf() {
-		
-		int[] v = new int[]{32, 15, 7, 9, 12};
-		int item = 9;
-		int index = Vector.indexOf(v, item);
-		assertEquals(3, Vector.indexOf(new int[]{32, 15, 7, 9, 12}, 9));
-	}
-	
-	
-	@Test
-	public void min(){
-		assertEquals(7, Vector.min(new int[]{32,15,7,9,12}));
-		assertEquals(1, Vector.min(new int[]{32,15,7,9,1}));
-		assertEquals(32, Vector.min(new int[]{32,90,91,84,56}));
-		assertEquals(0, Vector.min(new int[]{32,90,91,0,56}));
-	}
+    @Test
+public void indexOf() {
 
+    	//int[] v = new int[]{32, 15, 7, 9, 12};
+    	//int value = 9;
+    	//int index = Vector.indexOf(v,  value);
+    	//Assert.assertEquals(3,  index);
+
+    		assertEquals(0, Vector.indexOf(new int[]{32, 15, 7, 9, 12}, 32));
+    		assertEquals(2, Vector.indexOf(new int[]{32, 15, 7, 9, 12}, 7));
+    		assertEquals(3, Vector.indexOf(new int[]{32, 15, 7, 9, 12}, 9));
+    		assertEquals(4, Vector.indexOf(new int[]{32, 15, 7, 9, 12}, 12));
+    		assertEquals(-1, Vector.indexOf(new int[]{32, 15, 7, 9, 12}, 99));
 }
+@Test
+public void selectionSort(){
+	int[] v = new int[]{32, 15, 7, 9, 12};
+	Vector.selectionSOrt(v);
+	assertArrayEquals(new int[]{7, 9, 12, 15, 32}, v);
+}}
