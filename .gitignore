@@ -17,4 +17,6 @@ hs_err_pid*
 # monodevelop
 bin/
 *.userprefs
+*.pidb
+test-results/
 
