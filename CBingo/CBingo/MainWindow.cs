@@ -21,7 +21,6 @@ public partial class MainWindow: Gtk.Window
 			Process.Start("espeak", " -v es " + EspeakHelper.ToEspeak(bola));
 			buttonGoForward.Sensitive = bombo.QuedanBolas();
 		};
-
 	}
 
 	protected void OnDeleteEvent (object sender, DeleteEventArgs a)
