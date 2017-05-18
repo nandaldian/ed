@@ -97,9 +97,6 @@
             <property name="AutoSize">True</property>
           </packing>
         </child>
-        <child>
-          <placeholder />
-        </child>
       </widget>
     </child>
   </widget>
