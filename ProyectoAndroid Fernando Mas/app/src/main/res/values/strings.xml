@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Proyecto Android F.Mas</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="action_settings">Configuración</string>
+    <string name="title_activity_display_message">You Message is hereee!</string>
+</resources>
